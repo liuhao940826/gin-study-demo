@@ -9,7 +9,7 @@ func main() {
 	//创建路由器
 	router := gin.Default()
 
-	v1 := router.Group("v1")
+	v1 := router.Group("/v1")
 	{
 
 		v1.POST("/login", func(context *gin.Context) {
